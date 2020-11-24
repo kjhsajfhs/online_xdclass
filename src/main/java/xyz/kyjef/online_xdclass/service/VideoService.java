@@ -2,6 +2,7 @@ package xyz.kyjef.online_xdclass.service;
 
 import xyz.kyjef.online_xdclass.domain.Video;
 
+import java.io.InputStream;
 import java.util.List;
 
 public interface VideoService {
@@ -21,4 +22,6 @@ public interface VideoService {
     List<Video> listVideo();
 
     Video findDetailById(int videoId);
+
+    String exportExcelForVideoList(InputStream is, String fileName);
 }
